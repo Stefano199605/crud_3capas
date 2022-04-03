@@ -43,6 +43,7 @@ namespace CapaPresentacion
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnExportar_Excel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,9 +57,9 @@ namespace CapaPresentacion
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(25, 336);
+            this.btnEditar.Location = new System.Drawing.Point(25, 332);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(111, 34);
+            this.btnEditar.Size = new System.Drawing.Size(116, 42);
             this.btnEditar.TabIndex = 1;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -66,9 +67,9 @@ namespace CapaPresentacion
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(176, 336);
+            this.btnEliminar.Location = new System.Drawing.Point(176, 332);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(111, 34);
+            this.btnEliminar.Size = new System.Drawing.Size(118, 42);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -175,11 +176,22 @@ namespace CapaPresentacion
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // btnExportar_Excel
+            // 
+            this.btnExportar_Excel.Location = new System.Drawing.Point(343, 332);
+            this.btnExportar_Excel.Name = "btnExportar_Excel";
+            this.btnExportar_Excel.Size = new System.Drawing.Size(142, 42);
+            this.btnExportar_Excel.TabIndex = 14;
+            this.btnExportar_Excel.Text = "Exportar a Excel";
+            this.btnExportar_Excel.UseVisualStyleBackColor = true;
+            this.btnExportar_Excel.Click += new System.EventHandler(this.btnExportar_Excel_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1252, 482);
+            this.Controls.Add(this.btnExportar_Excel);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -219,6 +231,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnExportar_Excel;
     }
 }
 

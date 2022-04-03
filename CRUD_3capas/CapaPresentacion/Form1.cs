@@ -101,5 +101,33 @@ namespace CapaPresentacion
             else
                 MessageBox.Show("seleccione una fila por favor");
         }
+
+        private void btnExportar_Excel_Click(object sender, EventArgs e)
+        {
+            Exportar_a_Excel(dataGridView1);
+        }
+        private void Exportar_a_Excel(DataGridView datalistado)
+        {
+            Microsoft.Office.Interop.Excel.Application exportarExcel = new Microsoft.Office.Interop.Excel.Application();
+            exportarExcel.Application.Workbooks.Add(true);
+            int indicecolumna = 0;
+            foreach (DataGridViewColumn columna in dataGridView1.Columns)
+            {
+                indicecolumna++;
+                exportarExcel.Cells[1, indicecolumna] = columna.Name;
+            }
+            int indicefila = 0;
+            foreach (DataGridViewRow fila in dataGridView1.Rows)
+            {
+                indicefila++;
+                indicecolumna = 0;
+                foreach (DataGridViewColumn columna in dataGridView1.Columns)
+                {
+                    indicecolumna++;
+                    exportarExcel.Cells[indicefila + 1, indicecolumna] = fila.Cells[columna.Name].Value;
+                }
+            }
+            exportarExcel.Visible = true;
+        }
     }
 }
