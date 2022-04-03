@@ -28,7 +28,7 @@ namespace CapaDatos
         public void Insertar(string nombre,string desc,string marca,double precio,int stock)
         {
             comando.Connection = Conexion.AbrirConexion();
-            comando.CommandText = "InsertarProductos";
+            comando.CommandText = "InsetarProductos";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@descrip", desc);
