@@ -44,20 +44,21 @@ namespace CapaPresentacion
             this.label5 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnExportar_Excel = new System.Windows.Forms.Button();
+            this.txtNombreBuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 27);
+            this.dataGridView1.Location = new System.Drawing.Point(21, 142);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(850, 283);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(25, 332);
+            this.btnEditar.Location = new System.Drawing.Point(916, 332);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(116, 42);
             this.btnEditar.TabIndex = 1;
@@ -67,7 +68,7 @@ namespace CapaPresentacion
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(176, 332);
+            this.btnEliminar.Location = new System.Drawing.Point(1016, 404);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(118, 42);
             this.btnEliminar.TabIndex = 2;
@@ -178,7 +179,7 @@ namespace CapaPresentacion
             // 
             // btnExportar_Excel
             // 
-            this.btnExportar_Excel.Location = new System.Drawing.Point(343, 332);
+            this.btnExportar_Excel.Location = new System.Drawing.Point(1087, 332);
             this.btnExportar_Excel.Name = "btnExportar_Excel";
             this.btnExportar_Excel.Size = new System.Drawing.Size(142, 42);
             this.btnExportar_Excel.TabIndex = 14;
@@ -186,11 +187,22 @@ namespace CapaPresentacion
             this.btnExportar_Excel.UseVisualStyleBackColor = true;
             this.btnExportar_Excel.Click += new System.EventHandler(this.btnExportar_Excel_Click);
             // 
+            // txtNombreBuscar
+            // 
+            this.txtNombreBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreBuscar.Location = new System.Drawing.Point(112, 80);
+            this.txtNombreBuscar.Multiline = true;
+            this.txtNombreBuscar.Name = "txtNombreBuscar";
+            this.txtNombreBuscar.Size = new System.Drawing.Size(579, 28);
+            this.txtNombreBuscar.TabIndex = 15;
+            this.txtNombreBuscar.TextChanged += new System.EventHandler(this.txtNombreBuscar_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1252, 482);
+            this.Controls.Add(this.txtNombreBuscar);
             this.Controls.Add(this.btnExportar_Excel);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label5);
@@ -232,6 +244,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnExportar_Excel;
+        private System.Windows.Forms.TextBox txtNombreBuscar;
     }
 }
 

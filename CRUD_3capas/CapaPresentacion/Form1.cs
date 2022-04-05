@@ -15,6 +15,7 @@ namespace CapaPresentacion
     {
         CN_Productos objectoCN = new CN_Productos();
         private string idProducto = null;
+        
         private bool Editar = false;
         public Form1()
         {
@@ -57,7 +58,10 @@ namespace CapaPresentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             MostrarProdctos();
+            
+            
         }
         private void MostrarProdctos()
         {
@@ -128,6 +132,16 @@ namespace CapaPresentacion
                 }
             }
             exportarExcel.Visible = true;
+            //}
+
+
+        }
+
+        private void txtNombreBuscar_TextChanged(object sender, EventArgs e)
+        {
+            objectoCN.BuscarxNombre(dataGridView1, txtNombreBuscar.Text);
+            
+                
         }
     }
 }

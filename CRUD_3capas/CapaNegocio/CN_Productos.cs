@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using CapaDatos;
 namespace CapaNegocio
 {
@@ -17,6 +18,7 @@ namespace CapaNegocio
             return tabla;
 
         }
+        
         public void InsertarPRod(string nombre, string desc, string marca, string precio, string stock)
         {
             objetoCD.Insertar(nombre, desc, marca, Convert.ToDouble(precio), Convert.ToInt32(stock));
@@ -29,5 +31,6 @@ namespace CapaNegocio
         {
             objetoCD.Eliminar(Convert.ToInt32(id));
         }
+        
     }
 }
