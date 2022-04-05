@@ -137,11 +137,6 @@ namespace CapaPresentacion
 
         }
 
-        private void txtNombreBuscar_TextChanged(object sender, EventArgs e)
-        {
-            objectoCN.BuscarxNombre(dataGridView1, txtNombreBuscar.Text);
-            
-                
-        }
+        
     }
 }
