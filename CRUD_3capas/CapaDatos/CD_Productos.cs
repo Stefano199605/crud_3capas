@@ -28,18 +28,6 @@ namespace CapaDatos
             return tabla;
         }
 
-        public DataTable BuscarxNombre(string nombre)
-        {
-            comando.Connection = Conexion.AbrirConexion();
-            comando.CommandText = "filtro_busqueda";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@filtro", nombre);
-            SqlDataAdapter DA = new SqlDataAdapter(comando);
-            DA.Fill(tabla);
-            Conexion.CerrarConexion();
-            return tabla;
-        }
-      
         public void Insertar(string nombre,string desc,string marca,double precio,int stock)
         {
             comando.Connection = Conexion.AbrirConexion();

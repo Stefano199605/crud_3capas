@@ -44,7 +44,6 @@ namespace CapaPresentacion
             this.label5 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnExportar_Excel = new System.Windows.Forms.Button();
-            this.txtNombreBuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,22 +186,11 @@ namespace CapaPresentacion
             this.btnExportar_Excel.UseVisualStyleBackColor = true;
             this.btnExportar_Excel.Click += new System.EventHandler(this.btnExportar_Excel_Click);
             // 
-            // txtNombreBuscar
-            // 
-            this.txtNombreBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreBuscar.Location = new System.Drawing.Point(112, 80);
-            this.txtNombreBuscar.Multiline = true;
-            this.txtNombreBuscar.Name = "txtNombreBuscar";
-            this.txtNombreBuscar.Size = new System.Drawing.Size(579, 28);
-            this.txtNombreBuscar.TabIndex = 15;
-            this.txtNombreBuscar.TextChanged += new System.EventHandler(this.txtNombreBuscar_TextChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1252, 482);
-            this.Controls.Add(this.txtNombreBuscar);
             this.Controls.Add(this.btnExportar_Excel);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label5);
@@ -244,7 +232,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnExportar_Excel;
-        private System.Windows.Forms.TextBox txtNombreBuscar;
     }
 }
 
